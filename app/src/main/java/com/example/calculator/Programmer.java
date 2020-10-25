@@ -65,13 +65,13 @@ public class Programmer extends AppCompatActivity {
         btn_f = findViewById(R.id.letter_f);
 
 
-        btn_binary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                btn3.setEnabled(false);
-
-            }
-        });
+//        btn_binary.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                btn3.setEnabled(false);
+//
+//            }
+//        });
 
 
         btn_clear.setOnClickListener(new View.OnClickListener() {

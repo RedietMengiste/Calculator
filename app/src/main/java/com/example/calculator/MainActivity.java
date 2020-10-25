@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnGo;
+    Button btnGo, prog_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
+        prog_btn =(Button) findViewById(R.id.prog_btn);
+        prog_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNextActivity();
+            }
+        });
     }
+
+    public void openNextActivity(){
+        Intent intent = new Intent(this,Programmer.class);
+        startActivity(intent);
+    }
+
+
 }
